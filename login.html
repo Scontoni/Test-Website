@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Test Website</title>
+        
+    </head>
+
+    <body background='images/background.jpg' bgproperties='fixed'>
+    
+            <header id="myTopnav" class="topnav">
+                        
+                    <a href="login.html" class="active">Updog Financial</a>
+                    <a href="personal/personal.html">Personal</a>
+                    <a href="business/business.html">Business</a>
+                    <a href="account/account.html">Account</a>
+                    <a href="contact/contact.html">Contact</a>
+                    <a href="about/about.html">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                
+                    <script>
+
+                        function myFunction() { 
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";}
+                        else {
+                            x.className = "topnav";}
+                        }
+
+                    </script>
+
+            </header>
+        
+                    
+            <div class="outer_login_box">
+                
+                <div class="middle_login_box">
+                                        
+                        <div class="center_login_box">
+
+                                <a id="signin">SIGN IN</a>
+
+                            <section class="loginform cf">
+
+                                <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+
+                                  <ul>
+                                     <!-- Email Item --> 
+                                    <li>                        
+                                        <input type="email" name="usermail" placeholder="Email Address" required>
+                                    </li>
+                                      <!-- Password Item --> 
+                                    <li>
+                                        <input type="password" name="password" placeholder="Password" required
+                                    </li>
+
+                                    <li>
+                                        <input type="submit" value="Login">
+                                    </li>
+                                      
+                                    <li id="Fyp" >Forgot your password?</li>
+
+                                  </ul>
+
+                                </form>
+
+                            </section>
+
+                          </div>
+                            
+                </div>
+                
+          </div>
+        
+    </body>
+
+</html>
